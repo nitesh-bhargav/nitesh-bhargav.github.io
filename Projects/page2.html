@@ -31,12 +31,6 @@ body,html{width:100%;height:100%}.bg1,.profilepic-cont{box-sizing:border-box}bod
     background-color: #fff;
     border-bottom: 1px solid #cdcdcd;
     box-shadow: 1px 1px 1px #ccc;}
-.mybody{position: fixed;
-    width: 100%;
-    height: 100%;
-    margin-top: 60px;
-
-    }
 .backlink{
     padding: 20px 10px 10px 20px;
     display: block;
@@ -47,23 +41,9 @@ body,html{width:100%;height:100%}.bg1,.profilepic-cont{box-sizing:border-box}bod
 
 <div class="frame-cont">
     <iframe src="https://www.pexels.com/search/cat/" class="frame"></iframe>
-    <div class="myheader"><a href="index.html" class="backlink">Back</a></div>
-    <div class="mybody"></div>
+    <div class="myheader"><a href="../index.html" class="backlink">Back</a></div>
 </div>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script>
-document.addEventListener("wheel",function(){
-    var $elm = $(event.target);
-var direction = $elm.scrollTop() > ($elm.data('scrollTop') || 0) ? "down" : "up";
-$elm.data('scrollTop', $elm.scrollTop());
-console.log('scrolling', direction);
-})
 
 
-
-</script>
 </body>
 </html>
