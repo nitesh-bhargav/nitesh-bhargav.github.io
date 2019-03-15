@@ -9,20 +9,29 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <title>Nitesh Bhargav</title>
+<meta property='og:title' content='Nitesh Bhargav"/>
+<meta property='og:image' content='https://nitesh-bhargav.github.io/preview.jpg"/>
+<meta property='og:description' content='Probably the best UI expert for all your design problems."/>
+<meta property='og:url' content='https://nitesh-bhargav.github.io/" />
+
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
 </head>
 
 <body>
 <style>
-body,html{width:100%;height:100%}.bg1,.profilepic-cont{box-sizing:border-box}body{border:0;margin:0;font-family:Raleway,sans-serif;background:url(bg1.png) 100%/cover no-repeat}.bg1{width:600px;height:180px;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0;padding:10px}.profilepic-cont{width:120px;height:120px;border-radius:50%;overflow:hidden;background:url(profilepic.jpg) -10px -15px no-repeat;float:left;margin-top:20px}.info{width:420px;float:left;padding-left:10px;padding-top:10px}.line1{width:100%}.line1 .name{font-size:32px}.line1 .location{font-size:12px;color:#018ec1}.fa-map-marker{margin-left:10px;margin-right:2px;color:#92a7af}.line2,.line3 a{margin-left:3px}.line2{font-size:13px;line-height:21px;color:#4e4e4e;margin-top:5px}.line3 a{margin-top:10px;display:block;text-decoration:none;color:#0087ff}@media screen and (max-width:1110px){.line1 .name{font-size:32px}.line1 .location{font-size:12px;color:#018ec1}.fa-map-marker{margin-left:10px;margin-right:2px;color:#92a7af}.line2,.line3 a{margin-left:3px}.line2{font-size:13px;line-height:21px;color:#4e4e4e;margin-top:5px}.line3 a{margin-top:10px;display:block;text-decoration:none;color:#0087ff}}@media screen and (max-width:640px){.bg1,.info{width:100%}.bg1{height:280px}.profilepic-cont{margin:0 30px;box-sizing:border-box}.info{padding:0 30px;box-sizing:border-box}}@media screen and (max-width:480px){.bg1{height:350px}.profilepic-cont{margin:10px 30px}.line1 .name{width:100%;display:block}.fa-map-marker{margin-left:0;margin-bottom:10px}}@media screen and (max-width:360px){.bg1{width:100%;height:380px}}
+body,html{width:100%;height:100%}.bg1,.profilepic-cont{box-sizing:border-box}body{border:0;margin:0;font-family:Raleway,sans-serif;background:url(bg1.png) 100%/cover no-repeat}.bg1{width:600px;height:180px;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0;padding:10px;background-color: rgba(255, 255, 255, 0.80);border-radius: 5px;z-index: 9}.profilepic-cont{width:120px;height:120px;border-radius:50%;overflow:hidden;background:url(profilepic.jpg) -10px -15px no-repeat;float:left;margin-top:20px}.info{width:420px;float:left;padding-left:10px;padding-top:10px}.line1{width:100%}.line1 .name{font-size:32px}.line1 .location{font-size:12px;color:#018ec1}.fa-map-marker{margin-left:10px;margin-right:2px;color:#92a7af}.line2,.line3 a{margin-left:3px}.line2{font-size:13px;line-height:21px;color:#4e4e4e;margin-top:5px}.line3 a{margin-top:10px;display:block;text-decoration:none;color:#0087ff}@media screen and (max-width:1110px){.line1 .name{font-size:32px}.line1 .location{font-size:12px;color:#018ec1}.fa-map-marker{margin-left:10px;margin-right:2px;color:#92a7af}.line2,.line3 a{margin-left:3px}.line2{font-size:13px;line-height:21px;color:#4e4e4e;margin-top:5px}.line3 a{margin-top:10px;display:block;text-decoration:none;color:#0087ff}}@media screen and (max-width:640px){.bg1,.info{width:100%}.bg1{height:280px}.profilepic-cont{margin:0 30px;box-sizing:border-box}.info{padding:0 30px;box-sizing:border-box}}@media screen and (max-width:480px){.bg1{height:350px}.profilepic-cont{margin:10px 30px}.line1 .name{width:100%;display:block}.fa-map-marker{margin-left:0;margin-bottom:10px}}@media screen and (max-width:360px){.bg1{width:100%;height:380px}}
+#map{position: fixed;overflow: hidden;width: 100%;height: 100%;}
 </style>
 
 
 <div class="bg1"><div class="profilepic-cont" title="Nitesh Bhargav"></div><div class="info"><div class="line1"><span class="name">Nitesh Bhargav</span><i class="fa fa-map-marker"></i><span class="location">Hyderabad</span></div><div class="line2">Converting good ideas to great designs, converting great designs to awesome prototypes to give you one extra ordinory experiance in the ever changing web. </div><div class="line3"><a href="mailto:nitesh_bhargav@yahoo.com" target="_blank">nitesh_bhargav@yahoo.com</a></div></div></div>
 <div id="map"></div>
 <!--<a href="Projects\index.html">More</a>-->
-<script>
+<!--<script>
         // Initialize and add the map
         function initMap() {
           // The location of Uluru
@@ -36,6 +45,27 @@ body,html{width:100%;height:100%}.bg1,.profilepic-cont{box-sizing:border-box}bod
             </script>
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6NNq4Mqxe5bsBuRfMzDIM38U5ncGq4Jk&callback=initMap">
+</script>-->
+<script>
+import Map from 'ol/Map';
+import View from 'ol/View';
+import TileLayer from 'ol/layer/Tile';
+
+new Map({
+  target: 'map',
+  layers: [
+    new TileLayer({
+      source: new XYZ({
+        url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+      })
+    })
+  ],
+  view: new View({
+    center: [0, 0],
+    zoom: 2
+  })
+});
 </script>
+
 </body>
 </html>
