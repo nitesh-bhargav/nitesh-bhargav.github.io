@@ -59,21 +59,20 @@ function responseMain(x){
 function CreateElementX () {
 
                 //Create a div and attach it to container
-                var imgcontainer = document.getElementById('imgcontainer');
-
-                var img = '<div class="'+obj.class+'" id="'+obj.class+'-'+obj.counter+'" style="background-image: url('+obj.imgArray[obj.counter]+');"></div>';
+                var img = document.createElement('div'),
+                    imgcontainer = document.getElementById('imgcontainer');
+                
                 //attach image to div
-                //img.style.backgroundImage = "url("+obj.imgArray[obj.counter]+")";
-                //img.className += obj.class;
-                //img.id = obj.class +'-'+ obj.counter;
+                img.style.backgroundImage = "url("+obj.imgArray[obj.counter]+")";
+                img.className += obj.class;
+                img.id = obj.class +'-'+ obj.counter;
 
-                // img.addEventListener('click',function (){
-                //     document.getElementsByClassName('floating-bg')[0].style.backgroundImage = this.style.backgroundImage;
-                //     localCounter = parseInt(this.id.split('-')[1]);
-                // });
+                img.addEventListener('click',function (){
+                    document.getElementsByClassName('floating-bg')[0].style.backgroundImage = this.style.backgroundImage;
+                    localCounter = parseInt(this.id.split('-')[1]);
+                });
 
-                //imgcontainer.append(img);
-                imgcontainer.innerHTML += img;
+                imgcontainer.append(img);
 
                 if(preloadflag == true){
                     hideImages(waifuObj.class);
